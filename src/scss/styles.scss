@@ -1,0 +1,16 @@
+/* import the necessary Bootstrap files */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$light: #dddddd;
+$dark: #000;
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+/* create new custom classes from existing classes */
+.row-dark {
+  @extend .row;
+  background-color: $dark;
+  color: $light;
+}
