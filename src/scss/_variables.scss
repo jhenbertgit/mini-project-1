@@ -1,0 +1,29 @@
+// Import fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+// Variables
+$font-family-sans-serif: "Inter", sans-serif;
+
+$primary: #5724e9;
+$secondary: #505050;
+$light-color: #7596e3;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+// Create your own map
+$my-colors: (
+  "light-color": $light-color,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $my-colors);
+
+/* create new custom classes from existing classes */
+// .row-dark {
+//   @extend .row;
+//   background-color: $dark;
+//   color: $light;
+// }
