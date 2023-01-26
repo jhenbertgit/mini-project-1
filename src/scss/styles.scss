@@ -1,16 +1,25 @@
-/* import the necessary Bootstrap files */
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
+@import "_variables.scss";
 
-$light: #dddddd;
-$dark: #000;
-
-// Import all of Bootstrap's CSS
+/*Import all of Bootstrap's CSS*/
 @import "~bootstrap/scss/bootstrap";
 
-/* create new custom classes from existing classes */
-.row-dark {
-  @extend .row;
-  background-color: $dark;
-  color: $light;
-}
+/* Required imports */
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/variables-dark";
+// @import "~bootstrap/scss/maps";
+// @import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/root";
+
+/* Import the necessary Bootstrap files */
+// @import "~/bootstrap/scss/utilities";
+// @import "~/bootstrap/scss/reboot";
+// @import "~/bootstrap/scss/type";
+// @import "~/bootstrap/scss/images";
+// @import "~/bootstrap/scss/containers";
+// @import "~/bootstrap/scss/grid";
+// @import "~bootstrap/scss/helpers";
+
+// @import "~bootstrap/scss/utilities/api";
+
+
