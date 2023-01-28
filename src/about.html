@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beSAFE | About</title>
+    <!--jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="bg-body-secondary">
+      <div class="container py-4">
+        <div class="row">
+          <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="col-4 navbar-brand" href="index.html">
+                  <img src="./assets/logo-dark.svg" alt="logo" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarContent"
+                  aria-controls="navbarContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul
+                    class="col-12 navbar-nav d-flex justify-content-evenly text-uppercase fw-bolder fs-5 me-auto mb-2 mb-lg-0"
+                  >
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link active" aria-current="page"
+                        >About</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Symptoms</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Prevention</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Faq</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <div class="col-md-12 d-flex flex-wrap align-items-center my-auto">
+            <div class="col flex-shrink-1">
+              <h6 class="fs-3 fw-bold text-uppercase text-dark-color">
+                about the deceased
+              </h6>
+              <h1 class="display-1 fw-bolder text-uppercase">
+                what is corona virus
+              </h1>
+              <p class="fs-5">
+                Coronaviruses are a type of virus. There are many different
+                kinds, and some cause disease. A newly identified type has
+                caused a recent outbreak of respiratory illness now called
+                COVID-19.
+              </p>
+            </div>
+            <div class="d-flex position-relative">
+              <img
+                src="./assets/video-thumbnail.png"
+                class="img-fluid flex-fill"
+                alt="thumbnail-image"
+              />
+              <a
+                class="video-btn"
+                type="button"
+                data-bs-target="#modalLink"
+                data-src="https://www.youtube.com/embed/i0ZabxXmH4Y"
+                data-bs-toggle="modal"
+                ><img
+                  src="./assets/play-icon.svg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle"
+                  alt="play-icon"
+              /></a>
+            </div>
+          </div>
+          <!--Modal-->
+          <div class="modal fade" id="modalLink" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <!-- 16:9 aspect ratio -->
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      class="embed-responsive-item"
+                      src=""
+                      id="video"
+                      allowscriptaccess="always"
+                      allow="autoplay"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 d-flex flex-column align-items-center my-4">
+            <h6 class="fs-3 fw-bold text-uppercase text-dark-color my-4">
+              how does corona virus spread?
+            </h6>
+            <div class="d-flex flex-wrap justify-content-center gap-5">
+              <div class="card" style="width: 20rem">
+                <img
+                  src="./assets/card-img-1.png"
+                  class="card-img-top"
+                  alt="img-card"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-dark-color">Human Contact</h5>
+                  <p class="card-text">
+                    Coronaviruses are a type of virus. There are many different
+                    kinds, and some cause disease. A newly identified type has
+                    caused a recent outbreak of respiratory illness now called
+                    COVID-19.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem">
+                <img
+                  src="./assets/card-img-2.png"
+                  class="card-img-top"
+                  alt="img-card"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-dark-color">
+                    Contaminated Object
+                  </h5>
+                  <p class="card-text">
+                    People may also become infected when touching their eyes,
+                    nose or mouth after touching surfaces or objects that have
+                    been contaminated by the virus.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem">
+                <img
+                  src="./assets/card-img-3.png"
+                  class="card-img-top"
+                  alt="img-card"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-dark-color">Social Gathering</h5>
+                  <p class="card-text">
+                    If an infected people cough or sneezes their droplets can
+                    infect people nearby. That's why it is important to avoid
+                    close contact with others. Understand that people may be
+                    infected and have only to no symptoms at all.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--this script is from stackoverflow.com. One of the best tool that the developer must have.
+    :)-->
+    <script>
+      $(document).ready(function () {
+        //url of video in data-src attribute
+        var $videoSrc;
+        $(".video-btn").click(function () {
+          $videoSrc = $(this).data("src");
+        });
+
+        //fetching the video source
+        console.log($videoSrc);
+
+        //the video will auto-play upon opening of the modal
+        $("#modalLink").on("shown.bs.modal", function (e) {
+          $("#video").attr(
+            "src",
+            $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+          );
+          //stop the video when close
+          $("#modalLink").on("hide.bs.modal", function (e) {
+            $("#video").attr("src", $videoSrc); //you stop the video
+          });
+        });
+      });
+    </script>
+    <!--BS JavaScript-->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

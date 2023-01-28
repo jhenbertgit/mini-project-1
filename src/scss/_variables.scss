@@ -6,6 +6,7 @@ $font-family-sans-serif: "Inter", sans-serif;
 
 $primary: #5724e9;
 $secondary: #505050;
+$dark-color: #4a49a8;
 $light-color: #7596e3;
 
 $theme-colors: (
@@ -16,6 +17,7 @@ $theme-colors: (
 // Create your own map
 $my-colors: (
   "light-color": $light-color,
+  "dark-color": $dark-color,
 );
 
 // Merge the maps
