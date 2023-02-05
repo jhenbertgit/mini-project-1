@@ -14,14 +14,32 @@ $theme-colors: (
   "secondary": $secondary,
 );
 
-// Create your own map
+// My own color map
 $my-colors: (
   "light-color": $light-color,
   "dark-color": $dark-color,
 );
 
-// Merge the maps
 $theme-colors: map-merge($theme-colors, $my-colors);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "viewport-height":
+      map-merge(
+        map-get($utilities, "viewport-height"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "viewport-height"), "values"),
+              (
+                75: 75vh,
+              )
+            ),
+        )
+      ),
+  )
+);
 
 /* create new custom classes from existing classes */
 // .row-dark {
