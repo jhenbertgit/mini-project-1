@@ -1,8 +1,23 @@
-// Import fonts
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
-
-// Variables
 $font-family-sans-serif: "Inter", sans-serif;
+
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "viewport-height":
+//       map-merge(
+//         map-get($utilities, "viewport-height"),
+//         (
+//           values:
+//             map-merge(
+//               map-get(map-get($utilities, "viewport-height"), "values"),
+//               (
+//                 75: 75vh,
+//               )
+//             ),
+//         )
+//       ),
+//   )
+// );
 
 $primary: #5724e9;
 $secondary: #505050;
@@ -14,32 +29,17 @@ $theme-colors: (
   "secondary": $secondary,
 );
 
-// My own color map
-$my-colors: (
-  "light-color": $light-color,
-  "dark-color": $dark-color,
-);
-
-$theme-colors: map-merge($theme-colors, $my-colors);
-
-$utilities: map-merge(
-  $utilities,
+$theme-colors: map-merge(
+  $theme-colors,
   (
-    "viewport-height":
-      map-merge(
-        map-get($utilities, "viewport-height"),
-        (
-          values:
-            map-merge(
-              map-get(map-get($utilities, "viewport-height"), "values"),
-              (
-                75: 75vh,
-              )
-            ),
-        )
-      ),
+    "light-color": $light-color,
+    "dark-color": $dark-color,
   )
 );
+
+.vh-75 {
+  height: 75vh;
+}
 
 /* create new custom classes from existing classes */
 // .row-dark {

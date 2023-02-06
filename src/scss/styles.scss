@@ -1,9 +1,13 @@
+// Import fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
 /* Required imports - Configuration */
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/maps";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/variables-dark";
+// @import "~bootstrap/scss/maps";
+// @import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/utilities";
 
 /* Import the necessary Layouts and Components */
 // @import "~bootstrap/scss/root";
@@ -24,7 +28,7 @@
 @import "_variables.scss";
 
 //Utilities
-@import "~bootstrap/scss/utilities/api";
+// @import "~bootstrap/scss/utilities/api";
 
 /*Import all of Bootstrap's CSS*/
 @import "~bootstrap/scss/bootstrap";
