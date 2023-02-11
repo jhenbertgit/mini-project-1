@@ -28,7 +28,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                   <ul
-                    class="col-12 navbar-nav d-flex justify-content-evenly text-uppercase fw-bolder fs-5 me-auto mb-2 mb-lg-0"
+                    class="col-12 navbar-nav d-flex justify-content-evenly align-items-center text-uppercase fw-bolder fs-5 me-auto mb-2 mb-lg-0"
                   >
                     <li class="nav-item">
                       <a href="#" class="nav-link active" aria-current="page"
@@ -72,12 +72,16 @@
               />
             </div>
           </div>
-          <div class="d-flex flex-wrap bg-light-color rounded my-4 p-3">
-            <div
-              class="col-md-3 d-flex flex-wrap align-items-center justify-content-center m-auto"
-            >
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row">
+          <div
+            class="col bg-light-color d-flex flex-wrap justify-content-center rounded my-4 p-3"
+          >
+            <div class="col d-flex align-items-center justify-content-center">
               <img
-                class="my-auto"
+                class="my-auto flex-shrink-1"
                 src="./assets/icon _bell.svg"
                 alt="icon-bell"
               />
@@ -85,22 +89,26 @@
                 Philippines <br />live tracker
               </h6>
             </div>
-            <div
-              class="col-md-9 d-flex flex-wrap text-center align-items-center"
-            >
-              <div class="col bg-primary-subtle rounded my-2 me-3 p-2">
+            <div class="col-lg-10 col-md-10 d-flex flex-wrap text-center">
+              <div
+                class="col bg-primary-subtle align-self-center rounded my-2 me-3 p-2"
+              >
                 <h6 class="text-primary fw-bold">Confirmed Cases</h6>
                 <h3 id="confirmedCases" class="text-secondary fw-bolder">
                   1,000,000
                 </h3>
               </div>
-              <div class="col bg-primary-subtle rounded my-2 me-3 p-2">
+              <div
+                class="col bg-primary-subtle align-self-center rounded my-2 me-3 p-2"
+              >
                 <h6 class="text-primary fw-bold">Total Recovered</h6>
                 <h3 id="totRecovered" class="text-secondary fw-bolder">
                   1,000,000
                 </h3>
               </div>
-              <div class="col bg-primary-subtle rounded my-2 me-2 p-2">
+              <div
+                class="col bg-primary-subtle align-self-center rounded my-2 me-2 p-2"
+              >
                 <h6 class="text-primary fw-bold">Total Deaths</h6>
                 <h3 id="totDeaths" class="text-secondary fw-bolder">40,000</h3>
               </div>
@@ -108,6 +116,78 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="bg-light-color bg-opacity-25">
+      <footer class="py-4 my-0">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-muted">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="symptoms.html" class="nav-link px-2 text-muted"
+              >Symptoms</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="prevention.html" class="nav-link px-2 text-muted"
+              >Prevention</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-outline-secondary"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasBottom"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              External Links
+            </a>
+
+            <div
+              class="offcanvas offcanvas-bottom"
+              tabindex="-1"
+              id="offcanvasBottom"
+              aria-labelledby="offcanvasBottomLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title text-muted"
+                  id="offcanvasBottomLabel"
+                >
+                  More Information
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column text-center">
+                <a href="https://doh.gov.ph/" target="_blank"
+                  >Department of Health</a
+                >
+                <a href="https://iatf.doh.gov.ph/" target="_blank"
+                  >Inter-Agency Task Force on Emerging Infectious Deceases</a
+                >
+                <a href="https://www.facebook.com/ntfcovid19ph/" target="_blank"
+                  >National Task Force Against COVID-19</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <p class="text-center text-muted">
+          © 2023 beSAFE (A Non-profit Organization)
+        </p>
+      </footer>
     </section>
     <!--BS JavaScript-->
     <script type="module" src="./js/main.js"></script>
