@@ -12,16 +12,16 @@ export default defineConfig({
     port: 8080,
     hot: true,
   },
-  // build: {
-  //   outDir: "../dist",
-  //   sourcemap: true,
-  //   emptyOutDir: true,
-  //   rollupOptions: {
-  //     output: {
-  //       entryFileNames: "[name].js",
-  //       chunkFileNames: "[name].js",
-  //       assetFileNames: "[name].[ext]",
-  //     },
-  //   },
-  // },
+  build: {
+    outDir: "../dist",
+    sourcemap: true,
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        entryFileNames: "[name].js",
+        chunkFileNames: "[name].js",
+        assetFileNames: "[name].[ext]",
+      },
+    },
+  },
 });

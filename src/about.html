@@ -31,7 +31,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                   <ul
-                    class="col-12 navbar-nav d-flex justify-content-evenly text-uppercase fw-bolder fs-5 me-auto mb-2 mb-lg-0"
+                    class="col-12 navbar-nav d-flex justify-content-evenly align-items-center text-uppercase fw-bolder fs-5 me-auto mb-2 mb-lg-0"
                   >
                     <li class="nav-item">
                       <a href="index.html" class="nav-link">Home</a>
@@ -70,7 +70,7 @@
                 COVID-19.
               </p>
             </div>
-            <div class="d-flex position-relative">
+            <div class="col-lg-6 d-flex position-relative">
               <img
                 src="./assets/video-thumbnail.png"
                 class="img-fluid flex-fill"
@@ -173,6 +173,78 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="bg-light-color bg-opacity-25">
+      <footer class="py-4 my-0">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-muted">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="symptoms.html" class="nav-link px-2 text-muted"
+              >Symptoms</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="prevention.html" class="nav-link px-2 text-muted"
+              >Prevention</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-outline-secondary"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasBottom"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              External Links
+            </a>
+
+            <div
+              class="offcanvas offcanvas-bottom"
+              tabindex="-1"
+              id="offcanvasBottom"
+              aria-labelledby="offcanvasBottomLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title text-muted"
+                  id="offcanvasBottomLabel"
+                >
+                  More Information
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column text-center">
+                <a href="https://doh.gov.ph/" target="_blank"
+                  >Department of Health</a
+                >
+                <a href="https://iatf.doh.gov.ph/" target="_blank"
+                  >Inter-Agency Task Force on Emerging Infectious Deceases</a
+                >
+                <a href="https://www.facebook.com/ntfcovid19ph/" target="_blank"
+                  >National Task Force Against COVID-19</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <p class="text-center text-muted">
+          © 2023 beSAFE (A Non-profit Organization)
+        </p>
+      </footer>
     </section>
     <!--this script is from stackoverflow.com. One of the best tool that the developer must have.
     :)-->
