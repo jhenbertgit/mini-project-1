@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
 }
 
 .vh-75 {
@@ -21,11 +21,15 @@ body {
 }
 
 .bg-light-color {
-  background-color: var(--bs-light-color) !important;
+  background-color: var(--bs-light-color);
 }
 
 .text-dark-color {
   color: var(--bs-dark-color);
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
 }
 
 .bg-light-color-opacity-25 {
