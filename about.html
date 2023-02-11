@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <!--Custom CSS-->
     <link rel="stylesheet" href="style.css" />
-    <!--jQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
     <section class="bg-body-secondary">
@@ -254,32 +254,7 @@
         </p>
       </footer>
     </section>
-    <!--this script is from stackoverflow.com. One of the best tool that the developer must have.
-    :)-->
-    <script>
-      $(document).ready(function () {
-        //url of video in data-src attribute
-        var $videoSrc;
-        $(".video-btn").click(function () {
-          $videoSrc = $(this).data("src");
-        });
-
-        //fetching the video source
-        console.log($videoSrc);
-
-        //the video will auto-play upon opening of the modal
-        $("#modalLink").on("shown.bs.modal", function (e) {
-          $("#video").attr(
-            "src",
-            $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
-          );
-          //stop the video when close
-          $("#modalLink").on("hide.bs.modal", function (e) {
-            $("#video").attr("src", $videoSrc); //you stop the video
-          });
-        });
-      });
-    </script>
+    <script src="about.js"></script>
     <!--Bootstrap JS-->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
