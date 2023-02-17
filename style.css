@@ -12,10 +12,6 @@ body {
   font-family: var(--font-family) !important;
 }
 
-.vh-75 {
-  height: 75vh;
-}
-
 .bg-primary {
   background-color: var(--bs-primary) !important;
 }
