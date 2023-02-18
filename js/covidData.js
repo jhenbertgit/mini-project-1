@@ -6,8 +6,7 @@ const options = {
       "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
   },
 };
-
-async function covidData() {
+(async function () {
   try {
     const response = await fetch(
       "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/asia",
@@ -31,5 +30,4 @@ async function covidData() {
   } catch (err) {
     console.error(err);
   }
-}
-covidData();
+})(document, "liveData");
