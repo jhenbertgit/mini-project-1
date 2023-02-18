@@ -24,9 +24,9 @@ async function covidData() {
         document.getElementById("totDeaths").innerHTML =
           datum.TotalDeaths.toLocaleString("en-US");
 
-        console.log(`Total Cases: ${datum.TotalCases} `);
-        console.log(`Total Recovered: ${datum.TotalRecovered}`);
-        console.log(`Total Deaths: ${datum.TotalDeaths}`);
+        // console.log(`Total Cases: ${datum.TotalCases} `);
+        // console.log(`Total Recovered: ${datum.TotalRecovered}`);
+        // console.log(`Total Deaths: ${datum.TotalDeaths}`);
       });
   } catch (err) {
     console.error(err);
