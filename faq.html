@@ -319,46 +319,66 @@
             <a href="faq.html" class="nav-link px-2 text-muted">FAQs</a>
           </li>
           <li class="nav-item">
+            <!-- Button trigger modal -->
             <a
-              class="btn btn-outline-secondary"
-              data-bs-toggle="offcanvas"
-              href="#offcanvasBottom"
-              role="button"
-              aria-controls="offcanvasExample"
+              class="nav-link px-2 text-muted"
+              data-bs-toggle="modal"
+              href="#exampleModal"
             >
               External Links
             </a>
 
+            <!-- Modal -->
             <div
-              class="offcanvas offcanvas-bottom"
+              class="modal fade"
+              id="exampleModal"
               tabindex="-1"
-              id="offcanvasBottom"
-              aria-labelledby="offcanvasBottomLabel"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
             >
-              <div class="offcanvas-header">
-                <h5
-                  class="offcanvas-title text-muted"
-                  id="offcanvasBottomLabel"
-                >
-                  More Information
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body d-flex flex-column text-center">
-                <a href="https://doh.gov.ph/" target="_blank"
-                  >Department of Health</a
-                >
-                <a href="https://iatf.doh.gov.ph/" target="_blank"
-                  >Inter-Agency Task Force on Emerging Infectious Deceases</a
-                >
-                <a href="https://www.facebook.com/ntfcovid19ph/" target="_blank"
-                  >National Task Force Against COVID-19</a
-                >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-muted" id="exampleModalLabel">
+                      More information
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <a href="https://doh.gov.ph/" target="_blank"
+                        >Department of Health</a
+                      >
+                    </div>
+                    <div>
+                      <a href="https://iatf.doh.gov.ph/" target="_blank"
+                        >Inter-Agency Task Force on Emerging Infectious
+                        Deceases</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://www.facebook.com/ntfcovid19ph/"
+                        target="_blank"
+                        >National Task Force Against COVID-19</a
+                      >
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </li>
