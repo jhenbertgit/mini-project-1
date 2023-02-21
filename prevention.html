@@ -27,15 +27,15 @@
                 <button
                   class="navbar-toggler"
                   type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarContent"
-                  aria-controls="navbarContent"
-                  aria-expanded="false"
+                  id="navbarSideCollapse"
                   aria-label="Toggle navigation"
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarContent">
+                <div
+                  class="navbar-collapse offcanvas-collapse"
+                  id="navbarContent"
+                >
                   <ul
                     class="col-12 navbar-nav d-flex justify-content-evenly align-items-center text-uppercase fw-bolder fs-5 me-auto mb-2 mb-lg-0"
                   >
@@ -49,7 +49,10 @@
                       <a href="symptoms.html" class="nav-link">Symptoms</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link active" aria-current="page"
+                      <a
+                        href="#"
+                        class="nav-link active"
+                        aria-current="page"
                         >Prevention</a
                       >
                     </li>
@@ -400,5 +403,6 @@
     </section>
     <!--Bootstrap JS-->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/offcanvas-navbar.js"></script>
   </body>
 </html>
